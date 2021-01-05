@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="countDown.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Rubik:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="lds-roller loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <img id="catImage" src="" alt="" style="display:none">
+
+<div class="timer">
+    <div class="minutes-container">
+      <label for="minutes" class="inputHeadMinutes">Minutes</label>
+      <input type="number" class="input" id="minutes" placeholder="Minutes" >
+    </div>
+
+    <div class="seconds-container">
+      <label for="seconds" class="inputHeadSeconds">Seconds</label>
+      <input type="number" class="input" id="seconds" placeholder="Seconds">
+    </div>
+
+    <div id="clockset"> <br>
+    <br>
+    
+    <span id="clockmin" class="clock" ></span> 
+    <!-- <span id="clocksec" class="clock">30</span> -->
+    <div> 
+
+    <button class="button" id="start">Start countdown</button>
+    <button class="button" id="stop">Stop countdown</button>
+
+    </div>
+    
+
+
+
+
+
+    <script src="countDown.js"></script>
+</body> 
+</html>
