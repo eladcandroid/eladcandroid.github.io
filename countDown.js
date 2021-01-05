@@ -19,6 +19,10 @@ var countdown = function () {
     clearInterval(intervalId);
   };
 
+  var pauseCount = function () {
+    console.log('Pause');
+  };
+
   var stopButton = document.getElementById("stop");
   stopButton.addEventListener("click", stopCount);
 
@@ -43,4 +47,7 @@ var countdown = function () {
 };
 
 var startButton = document.getElementById("start");
-startButton.addEventListener("click", countdown);
+startButton.addEventListener("click", pauseCount);
+
+var pauseButton = document.getElementById("pause");
+pauseButton.addEventListener("click", countdown);
